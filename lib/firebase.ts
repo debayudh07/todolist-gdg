@@ -8,13 +8,13 @@ import { getStorage } from "firebase/storage"
 import { getAnalytics, isSupported } from "firebase/analytics"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBdM1km1gJnoPCiyF3f7vQxJS3KQ0bFwJ8",
-  authDomain: "blog-app-342b7.firebaseapp.com",
-  projectId: "blog-app-342b7",
-  storageBucket: "blog-app-342b7.firebasestorage.app",
-  messagingSenderId: "573507840144",
-  appId: "1:573507840144:web:c20cbc544b911513169015",
-  measurementId: "G-QRZV27L6F3",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 }
 
 /* ------------------------------------------------------------------
